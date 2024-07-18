@@ -41,6 +41,7 @@ ESPAsyncTCP.h
 ESPAsyncWebServer.h
 Adafruit_BME280.h
 RTClib.h
+ArduinoJson.h
 
 # Setup arduino enviroment for VS Code with arduino-cli
 
@@ -55,6 +56,7 @@ arduino-cli lib install ESPAsyncTCP
 arduino-cli lib install ESPAsyncWebServer
 arduino-cli lib install "Adafruit BME280 Library"
 arduino-cli lib install RTClib
+arduino-cli lib install ArduinoJson
 
 arduino-cli lib update-index
 arduino-cli lib list
@@ -88,3 +90,12 @@ Every 5 sec, that means 60sec/5sec=12 lines a minute we store data.
 One hour has 60min, that means 60min*12 lines = 720 lines per hour.
 
 13500 lines / 720 lines per hour = 18,75 hours of storing data.
+
+# HTML 
+
+In order to use Syntax highlighting and IntelliSense from VS Code, we have a sperate [html.html](html.html) in our repo, so we can edit things there and afterwards copy it over to the [html.h](html.h) file. The content of this html file will then be accessible with the variable name *htmlContent* if you include the html.h file in your sources...
+
+# Releases
+
+Find some releases here: https://github.com/lg-lfz/DataRecorder/releases/
+They can be flashed with the online flasher https://web.esphome.io/

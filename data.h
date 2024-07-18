@@ -7,13 +7,20 @@ struct SensorData
     float pressure;
     float altitude;
     float temperature;
-    float measurement_value;
+    float gas;
     uint8_t hour;
     uint8_t minute;
     uint8_t second;
     uint8_t day;
     uint8_t month;
     uint16_t year;
+};
+
+struct FileData
+{
+    size_t filesize;
+    String filename;
+    size_t free_space;
 };
 
 struct TimeDateData
@@ -29,3 +36,5 @@ struct TimeDateData
 String formatISO8601(const uint16_t year, const uint8_t month, const uint8_t day, const uint8_t hour, const uint8_t minute, const uint8_t second);
 String formatISO8601(const TimeDateData & time_date_data);
 String getJSON(const SensorData & data);
+String getJSON(const FileData &data);
+String getFirstCSVLine();
