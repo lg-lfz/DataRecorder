@@ -99,3 +99,9 @@ In order to use Syntax highlighting and IntelliSense from VS Code, we have a spe
 
 Find some releases here: https://github.com/lg-lfz/DataRecorder/releases/
 They can be flashed with the online flasher https://web.esphome.io/
+
+# GUI
+
+Connect to the open WLAN with the SSID "DataRecorder-*****". After the connection is established, open the webpage http://10.10.10.10. Record your data...
+
+![Screenshot](image.png)
